@@ -21,15 +21,12 @@ public class Lab02 {
 		System.out.print("\nEnter another positive integer: ");
 		int input2 = inKey.nextInt(); 
 		if (input1>0 && input2>0) {
-		
-		int max = Math.max(input1, input2);
-		int min = Math.min(input1, input2);
-		//max = Integer.valueOf (max);
-		//min = Integer.valueOf (min);
-		for (int i=1; i<=100; i++)
+		int max = Math.max(input1,input2);
+		int min = Math.min(input1,input2);
+		for (int i=0; i<100; i++)
 		{
-		int random_int = (int) Math.floor(Math.random() * (max - min + 1) + min);
-		System.out.printf(random_int +" ");
+		System.out.print((int)(Math.random() * (max-min+1))+min +" ");
+			
 		}
 		}
 		}
@@ -37,7 +34,7 @@ public class Lab02 {
 
 	public static void problem2() {
 		Scanner inKey = new Scanner(System.in);
-		System.out.print("Enter the radius: ");
+		System.out.print("\nEnter the radius: ");
 		double rad = inKey.nextDouble();
 		System.out.print("Enter height: ");
 		double height = inKey.nextDouble();
