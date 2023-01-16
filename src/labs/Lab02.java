@@ -20,15 +20,12 @@ public class Lab02 {
 		int input1 = inKey.nextInt();
 		System.out.print("\nEnter another positive integer: ");
 		int input2 = inKey.nextInt(); 
-		if (input1>0 && input2>0) {
-		int max = Math.max(input1,input2);
-		int min = Math.min(input1,input2);
+		//if (input1>0 && input2>0) {
 		for (int i=0; i<100; i++)
 		{
-		System.out.print((int)(Math.random() * (max-min+1))+min +" ");
-			
+		System.out.print((int)(Math.random() * (Math.max(input1,input2)-Math.min(input1,input2)+1))+Math.min(input1,input2) +" ");	
 		}
-		}
+		//}
 		}
 	
 
